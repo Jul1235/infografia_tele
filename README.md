@@ -1,1 +1,0 @@
-# infografia_tele
