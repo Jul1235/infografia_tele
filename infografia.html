@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Fundamentos de Redes y Ciberseguridad</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 4px solid #667eea;
+        }
+
+        h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            color: #667eea;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .section {
+            background: linear-gradient(135deg, #f6f8fb 0%, #e9ecef 100%);
+            border-radius: 15px;
+            padding: 25px;
+            border-left: 5px solid;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .section-1 { border-left-color: #3182ce; }
+        .section-2 { border-left-color: #38a169; }
+        .section-3 { border-left-color: #d69e2e; }
+        .section-4 { border-left-color: #e53e3e; }
+
+        .section h2 {
+            color: #2d3748;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+        }
+
+        .section-1 .icon { background: #3182ce; color: white; }
+        .section-2 .icon { background: #38a169; color: white; }
+        .section-3 .icon { background: #d69e2e; color: white; }
+        .section-4 .icon { background: #e53e3e; color: white; }
+
+        .content-box {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 12px;
+        }
+
+        .content-box:last-child {
+            margin-bottom: 0;
+        }
+
+        h3 {
+            color: #4a5568;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+            padding: 8px;
+            background: #f7fafc;
+            border-radius: 8px;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .bullet {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #667eea;
+            flex-shrink: 0;
+        }
+
+        .item-text {
+            color: #2d3748;
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+
+        .highlight {
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .image-placeholder {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px auto 0;
+            border: 2px dashed #667eea;
+            overflow: hidden;
+        }
+
+        .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .placeholder-text {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .split-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 2px solid #e2e8f0;
+            color: #718096;
+            font-size: 0.9em;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌐 Fundamentos de Redes y Ciberseguridad</h1>
+            <p class="subtitle">Del Dato al Ciberespacio: Una Guía Visual Completa</p>
+        </header>
+
+        <div class="grid">
+            <!-- Sección 1: El Viaje del Dato -->
+            <div class="section section-1">
+                <h2>
+                    <span class="icon">📡</span>
+                    1. El Viaje del Dato
+                </h2>
+
+                <div class="content-box">
+                    <h3>Medios de Transmisión</h3>
+                    <div class="item">
+                        <span class="bullet"></span>
+                        <span class="item-text"><span class="highlight">Guiados:</span> Cable de cobre, fibra óptica</span>
+                    </div>
+                    <div class="item">
+                        <span class="bullet"></span>
+                        <span class="item-text"><span class="highlight">No guiados:</span> Radio, WiFi, satélite</span>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>Modos de Transmisión</h3>
+                    <div class="item">
+                        <span class="bullet"></span>
+                        <span class="item-text"><span class="highlight">Simplex:</span> Solo envía (Radio AM/FM)</span>
+                    </div>
+                    <div class="item">
+                        <span class="bullet"></span>
+                        <span class="item-text"><span class="highlight">Half-Duplex:</span> Por turnos (Walkie-talkie)</span>
+                    </div>
+                    <div class="item">
+                        <span class="bullet"></span>
+                        <span class="item-text"><span class="highlight">Full-Duplex:</span> Simultáneo (Teléfono)</span>
+                    </div>
+                </div>
+
+                <div class="image-placeholder">
+                    <img src="1.png" alt="Medios y Modos de Transmisión" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=placeholder-text>📡 Imagen 1: Transmisión de Datos</span>'">
+                </div>
+            </div>
+
+            <!-- Sección 2: Arquitectura de Redes -->
+            <div class="section section-2">
+                <h2>
+                    <span class="icon">🏗️</span>
+                    2. Arquitectura de Redes
+                </h2>
+
+                <div class="content-box">
+                    <h3>Tipos de Redes por Alcance</h3>
+                    <div class="item">
+                        <span class="bullet"></span>
+                        <span class="item-text"><span class="highlight">LAN:</span> Red de Área Local (un edificio)</span>
+                    </div>
+                    <div class="item">
+                        <span class="bullet"></span>
+                        <span class="item-text"><span class="highlight">MAN:</span> Red de Área Metropolitana (una ciudad)</span>
+                    </div>
+                    <div class="item">
+                        <span class="bullet"></span>
+                        <span class="item-text"><span class="highlight">WAN:</span> Red de Área Amplia (países/continentes)</span>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>Componentes Clave</h3>
+                    <div class="item">
+                        <span class="bullet"></span>
+                        <span class="item-text"><span class="highlight">Nodos:</span> Dispositivos conectados</span>
+                    </div>
+                    <div class="item">
+                        <span class="bullet"></span>
+                        <span class="item-text"><span class="highlight">Routers:</span> Direccionan el tráfico</span>
+                    </div>
+                    <div class="item">
+                        <span class="bullet"></span>
+                        <span class="item-text"><span class="highlight">Servidores:</span> Proveen servicios</span>
+                    </div>
+                </div>
+
+                <div class="image-placeholder">
+                    <img src="2.png" alt="Arquitectura de Redes" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=placeholder-text>🏗️ Imagen 2: Tipos de Redes</span>'">
+                </div>
+            </div>
+
+            <!-- Sección 3: Ciberespacio -->
+            <div class="section section-3">
+                <h2>
+                    <span class="icon">🌍</span>
+                    3. Conceptos del Ciberespacio
+                </h2>
+
+                <div class="content-box">
+                    <h3>Identificación en la Red</h3>
+                    <div class="item">
+                        <span class="bullet"></span>
+                        <span class="item-text"><span class="highlight">Dirección IP:</span> La "dirección" única del dispositivo</span>
+                    </div>
+                    <div class="item">
+                        <span class="bullet"></span>
+                        <span class="item-text"><span class="highlight">Dominio:</span> El "nombre" amigable de una web</span>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>Niveles de la Web</h3>
+                    <div class="item">
+                        <span class="bullet"></span>
+                        <span class="item-text"><span class="highlight">Surface Web:</span> Contenido indexado y accesible</span>
+                    </div>
+                    <div class="item">
+                        <span class="bullet"></span>
+                        <span class="item-text"><span class="highlight">Deep Web:</span> Contenido no indexado (bases de datos, intranets)</span>
+                    </div>
+                </div>
+
+                <div class="image-placeholder">
+                    <img src="3.png" alt="Ciberespacio y Dominios" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=placeholder-text>🌍 Imagen 3: IP y Dominios</span>'">
+                </div>
+            </div>
+
+            <!-- Sección 4: Seguridad Básica -->
+            <div class="section section-4">
+                <h2>
+                    <span class="icon">🔒</span>
+                    4. Seguridad Básica
+                </h2>
+
+                <div class="content-box">
+                    <h3>Conceptos Esenciales</h3>
+                    <div class="item">
+                        <span class="bullet"></span>
+                        <span class="item-text"><span class="highlight">Amenaza:</span> Riesgo o peligro posible</span>
+                    </div>
+                    <div class="item">
+                        <span class="bullet"></span>
+                        <span class="item-text"><span class="highlight">Vulnerabilidad:</span> Debilidad explotable</span>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>Protección Fundamental</h3>
+                    <div class="item">
+                        <span class="bullet"></span>
+                        <span class="item-text"><span class="highlight">Contraseña fuerte:</span> Mezcla de caracteres, números y símbolos</span>
+                    </div>
+                    <div class="item">
+                        <span class="bullet"></span>
+                        <span class="item-text"><span class="highlight">Firewall:</span> Barrera protectora de red</span>
+                    </div>
+                    <div class="item">
+                        <span class="bullet"></span>
+                        <span class="item-text"><span class="highlight">Phishing:</span> Engaño por mensaje fraudulento</span>
+                    </div>
+                </div>
+
+                <div class="image-placeholder">
+                    <img src="4.png" alt="Seguridad en Ciberseguridad" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=placeholder-text>🔒 Imagen 4: Ciberseguridad</span>'">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p> <strong>Juliano Cardona 32.281.199 | Juan Moya 32.383.863 | Leonardo Escobar 32.412.031 </strong></p>
+        </footer>
+    </div>
+</body>
+</html>
